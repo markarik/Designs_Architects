@@ -33,6 +33,13 @@ class ConfirmPasswordController extends Controller
      *
      * @return void
      */
+
+    public function showConfirmForm()
+    {
+        return view('admin.auth.passwords.confirm');
+    }
+
+
     public function __construct()
     {
         $this->middleware('auth');
