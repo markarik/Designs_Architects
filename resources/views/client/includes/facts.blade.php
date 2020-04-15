@@ -31,7 +31,7 @@
         </div>
 
         <div class="facts-img">
-            <img src="img/facts-img.png" alt="" class="img-fluid">
+            <img src="{{asset('client/img/facts-img.png')}}" alt="" class="img-fluid">
         </div>
 
     </div>

@@ -65,71 +65,36 @@
 {{--    </head>--}}
 {{--    <body>--}}
 @extends('client.layout.app')
-<!-- Styles -->
-<style>
-    html, body {
-        background-color: #fff;
-        color: #636b6f;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 200;
-        height: 100vh;
-        margin: 0;
-    }
 
-    .full-height {
-        height: 100vh;
-    }
-
-    .flex-center {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .position-ref {
-        position: relative;
-    }
-
-    .top-right {
-        position: absolute;
-        right: 10px;
-        top: 18px;
-    }
-
-    .content {
-        text-align: center;
-    }
-
-    .title {
-        font-size: 84px;
-    }
-
-    .links > a {
-        color: #636b6f;
-        padding: 0 25px;
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: .1rem;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    .m-b-md {
-        margin-bottom: 30px;
-    }
-</style>
 
 @section('content')
 
 
-    <div class="flex-center position-ref full-height">
+    <div>
     @include('client.includes.header')
-        @include('client.includes.carousel')
 
+        @include('client.includes.carousel')
         <main id="main">
-            
+                        @include('client.includes.feutured')
+            @include('client.includes.about')
+            @include('client.includes.services')
+            @include('client.includes.call')
+            @include('client.includes.skills')
+            @include('client.includes.facts')
+            @include('client.includes.portfolio')
+            @include('client.includes.clients')
+            @include('client.includes.testimonials')
+            @include('client.includes.team')
+            @include('client.includes.contacts')
         </main>
-{{--            <div class="content">--}}
+
+        @include('client.includes.footer')
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <div id="preloader"></div>
+
+
+        {{--            <div class="content">--}}
 {{--                <div class="title m-b-md">--}}
 {{--                    Laravel--}}
 {{--                </div>--}}
