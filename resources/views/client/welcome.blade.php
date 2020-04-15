@@ -127,6 +127,7 @@
         @include('client.includes.carousel')
 
         <main id="main">
+            
         </main>
 {{--            <div class="content">--}}
 {{--                <div class="title m-b-md">--}}
@@ -146,6 +147,7 @@
 {{--            </div>--}}
         </div>
 
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 @endsection
 {{--    </body>--}}
