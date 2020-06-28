@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70e0904f-7e77-414c-b2ef-0b26f8f236e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/client/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/client/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/includes/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/includes/header.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="70e0904f-7e77-414c-b2ef-0b26f8f236e2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
     <ignored path="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir/" />
     <ignored path="$PROJECT_DIR$/vendor/doctrine/inflector/" />
@@ -561,12 +556,12 @@
       <option name="presentableId" value="Default" />
       <updated>1586888622735</updated>
       <workItem from="1586888657488" duration="10208000" />
-      <workItem from="1586939109256" duration="5984000" />
+      <workItem from="1586939109256" duration="6383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16192000" />
+    <option name="totallyTimeSpent" value="16591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1366" height="742" extended-state="6" />
