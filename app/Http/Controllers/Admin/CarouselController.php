@@ -3,7 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Model\Carousel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Intervention\Image\Facades\Image;
+use Purifier;
 
 class CarouselController extends Controller
 {
@@ -43,7 +47,41 @@ class CarouselController extends Controller
      */
     public function store(Request $request)
     {
-        //
+//        dd($request->all());
+        $this->validate($request,[
+            'description'=>'required',
+            'image'=>'required|image|mimes:jpeg,png,jpg,gif|max:2200'
+        ]);
+
+//        $couresel_image_path = 'files/images/couresels';
+
+        if($request ->hasFile('image')){
+            $couresel_image = $request->file('image');
+
+            $date = sha1(date('YmdHis').Str::random(5));
+
+            $final_couresel = $date. '.' .$couresel_image->getClientOriginalName();
+            $path = public_path('files/images/carousels/'.$final_couresel);
+
+//            $couresel_image->move($couresel_image_path,$final_couresel);
+            Image::make($couresel_image)->resize(800, 400)->save($path);
+
+            $couresel = new Carousel();
+
+//            $couresel->description = $request->input('description');
+            $couresel->status = 2;
+            $couresel->description = Purifier::clean($request->description);
+            $couresel->title = Purifier::clean($request->title);
+            $couresel->image_url = $final_couresel;
+
+            $couresel->save();
+//            dd($couresel);
+        }
+
+
+        return redirect()->back()->with('success','Image Created Successfully');
+
+
     }
 
     /**
