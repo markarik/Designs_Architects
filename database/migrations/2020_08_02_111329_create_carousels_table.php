@@ -19,6 +19,7 @@ class CreateCarouselsTable extends Migration
             $table->string('title');
             $table->string('image_url');
             $table->string('description');
+            $table->integer('status')->comment('1:Enabled 2:Disabled');
             $table->timestamps();
         });
     }
