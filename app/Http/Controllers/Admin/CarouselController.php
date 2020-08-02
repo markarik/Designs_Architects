@@ -25,7 +25,12 @@ class CarouselController extends Controller
      */
     public function index()
     {
-        return view('admin.dashboard.carousel.carousel');
+        $carousels = Carousel::all();
+//        dd($carousels);
+        $data = [
+            'carousels'=>$carousels,
+        ];
+        return view('admin.dashboard.carousel.carousel',$data);
 
     }
 
