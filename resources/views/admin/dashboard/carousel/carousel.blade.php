@@ -395,19 +395,23 @@
                         <div class="card bg-secondary border-0 mb-0">
                             <div class="card-body px-lg-5 py-lg-5">
 
-                                <form role="form">
+                                <form role="form" method="post" action="{{route('admin.carousel.store')}}" enctype="multipart/form-data">
+
+                                    {{csrf_field()}}
                                     <div class="form-group mb-3">
+                                        <label for="image">Title</label>
+
                                         <div class="input-group input-group-merge input-group-alternative">
 
-                                            <input class="form-control" name="title" placeholder="Title" type="text">
+                                            <input class="form-control" name="title"  type="text">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="image">Description</label>
+                                        <label for="description">Description</label>
 
                                         <div class="input-group input-group-merge input-group-alternative">
 
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
 {{--                                            <input class="form-control" placeholder="Password" type="password">--}}
                                         </div>
                                     </div>
@@ -421,7 +425,7 @@
                                         </div>
                                     </div>
                                     <div class="text-center">
-                                        <button type="button" class="btn btn-primary my-4">Submit</button>
+                                        <button type="submit" class="btn btn-primary my-4">Submit</button>
                                     </div>
                                 </form>
                             </div>
