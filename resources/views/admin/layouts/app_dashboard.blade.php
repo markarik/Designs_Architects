@@ -27,7 +27,7 @@
     <!-- Argon CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/argon.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('assets/css/admin.css')}}" type="text/css">
-    <script src="{{ asset('js/app.js') }}" defer></script>
+{{--    <script src="{{ asset('js/app.js') }}" defer></script>--}}
 
     <!-- Fonts -->
 {{--    <link rel="dns-prefetch" href="//fonts.gstatic.com">--}}
