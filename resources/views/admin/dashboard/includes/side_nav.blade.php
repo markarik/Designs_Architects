@@ -12,7 +12,7 @@
                 <!-- Nav items -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="dashboard.html">
+                        <a class="nav-link active" href="{{route('admin.home')}}">
                             <i class="ni ni-tv-2 text-primary"></i>
                             <span class="nav-link-text">Dashboard</span>
                         </a>
@@ -24,9 +24,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('admin.map.index')}}">
+                        <a class="nav-link" href="{{route('admin.carousel.index')}}">
                             <i class="ni ni-pin-3 text-primary"></i>
-                            <span class="nav-link-text">Google</span>
+                            <span class="nav-link-text">Carousel</span>
                         </a>
                     </li>
                     <li class="nav-item">

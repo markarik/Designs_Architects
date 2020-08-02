@@ -26,7 +26,7 @@ Route::prefix('/admin')->name('admin.')->namespace('Admin')->group(function (){
 
 //    Route::get('/','DashboardController@index')->name('index');
     Route::get('/icons','IconsController@index')->name('icon.index');
-    Route::get('/map','MapController@index')->name('map.index');
+    Route::get('/carousel','CarouselController@index')->name('carousel.index');
     Route::get('/profile','ProfileController@index')->name('profile.index');
     Route::get('/tables','TableController@index')->name('table.index');
 
